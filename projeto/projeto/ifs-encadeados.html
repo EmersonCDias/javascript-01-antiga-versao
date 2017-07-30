@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Ifs encadeados</title>
+    </head>
+    <body>
+        Exercicios extra de ifs encadeados
+        <script>
+        
+        var salarioMensal = 0;
+
+        //se o salário mensal for maior que 0 e menor que 1000, calcule a porcentagem de bonus e  imprima "o bonus é 5%" e o valor calculado  no console 
+        if(salarioMensal >= 0 && salarioMensal <= 1000.00){
+            var bonus = salarioMensal * 0.05;
+            var salarioComBonus = salarioMensal + bonus;
+            alert("O salário final, com bônus de 5%, é de R$" + salarioComBonus);
+        }
+
+        //se não cair na condição anterior e o salário mensal for menor que 2000, calcule a porcentagem de bonus e  imprima "o bonus é 10%" e o valor calculado no console
+        if(salarioMensal >= 1000.00 && salarioMensal <= 2000.00){
+            var bonus = salarioMensal * 0.10;
+            var salarioComBonus = salarioMensal + bonus;
+            alert("O salário final, com bônus de 5%, é de R$" + salarioComBonus);
+            alert("O salário final, com bônus de 10%, é de R$" + salarioFinal);
+        }
+
+        //se não cair na condição anterior, calcule a porcentagem de bonus e imprima "o bonus é 15%" e o valor calculado  no console
+               
+        if(salarioMensal > 2000.00){
+            var bonus = salarioMensal * 0.15;
+            var salarioComBonus = salarioMensal + bonus;
+            alert("O salário final, com bônus de 5%, é de R$" + salarioComBonus);
+        }
+
+        // se não cair em nenhuma condição anterior é porque o salário não foi informado ou ele é zero
+        if(salarioMensal <= 0){
+            alert("O salário não foi informado ou é igual ou inferior a 0");
+        }
+
+        </script>
+    </body>
+</html>
